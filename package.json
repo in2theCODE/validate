@@ -52,6 +52,7 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
+    "winston": "^3.17.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
@@ -65,9 +66,9 @@
     "@nx/eslint-plugin": "20.3.0",
     "@nx/jest": "20.3.0",
     "@nx/js": "20.3.0",
-    "@nx/next": "20.3.0",
+    "@nx/next": "^20.1.4",
     "@nx/playwright": "20.3.0",
-    "@nx/react": "20.3.0",
+    "@nx/react": "^20.1.4",
     "@nx/vite": "20.3.0",
     "@nx/web": "20.3.0",
     "@nx/workspace": "20.3.0",

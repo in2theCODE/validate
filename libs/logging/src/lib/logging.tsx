@@ -1,11 +1,15 @@
 import styles from './logging.module.css';
 
-export function Logging() {
-  return (
-    <div className={styles['container']}>
-      <h1>Welcome to Logging!</h1>
-    </div>
-  );
-}
+const logger = {
+  info: (message: string) => {
+    console.log(`[INFO] ${message}`);
+  },
+  warn: (message: string) => {
+    console.warn(`[WARN] ${message}`);
+  },
+  error: (message: string) => {
+    console.error(`[ERROR] ${message}`);
+  }
+};
 
-export default Logging;
+export default logger;

@@ -1,4 +1,5 @@
 import './global.css';
+import { ErrorBoundary } from '@validate/logging';
 
 export const metadata = {
   title: 'Welcome to validate',
@@ -12,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
+      </body>
     </html>
   );
 }
